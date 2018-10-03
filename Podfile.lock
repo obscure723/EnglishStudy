@@ -1,0 +1,46 @@
+PODS:
+  - Koloda (4.5):
+    - pop (~> 1.0)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - pop (1.0.10)
+  - Realm (3.10.0):
+    - Realm/Headers (= 3.10.0)
+  - Realm/Headers (3.10.0)
+  - RealmSwift (3.10.0):
+    - Realm (= 3.10.0)
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - Koloda
+  - Material
+  - RealmSwift
+  - SCLAlertView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Koloda
+    - Material
+    - Motion
+    - pop
+    - Realm
+    - RealmSwift
+    - SCLAlertView
+
+SPEC CHECKSUMS:
+  Koloda: b1983d795f005f1436f9aaf1911bc287af82348f
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
+  RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: c062b9d1d84bf631ed19c5d823db7d65196a5386
+
+COCOAPODS: 1.5.2
