@@ -15,6 +15,7 @@
 		0C35D5F7216440D700EC277C /* PhraseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35D5F6216440D700EC277C /* PhraseCell.swift */; };
 		0C35D5F92164882C00EC277C /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35D5F82164882C00EC277C /* SelectCategoryViewController.swift */; };
 		0C35D61B2164A0BE00EC277C /* SelectOneQOneAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35D61A2164A0BE00EC277C /* SelectOneQOneAViewController.swift */; };
+		0C35D61D2164A82600EC277C /* OneQOneAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35D61C2164A82600EC277C /* OneQOneAViewController.swift */; };
 		0C4EC33721606B2C00762166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4EC33621606B2C00762166 /* AppDelegate.swift */; };
 		0C4EC33C21606B2C00762166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4EC33A21606B2C00762166 /* Main.storyboard */; };
 		0C4EC33E21606B2E00762166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4EC33D21606B2E00762166 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		0C35D5F6216440D700EC277C /* PhraseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCell.swift; sourceTree = "<group>"; };
 		0C35D5F82164882C00EC277C /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
 		0C35D61A2164A0BE00EC277C /* SelectOneQOneAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOneQOneAViewController.swift; sourceTree = "<group>"; };
+		0C35D61C2164A82600EC277C /* OneQOneAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneQOneAViewController.swift; sourceTree = "<group>"; };
 		0C4EC33321606B2C00762166 /* EnglishStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4EC33621606B2C00762166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C4EC33B21606B2C00762166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				0C35D5F321643FFA00EC277C /* PhraseListViewController.swift */,
 				0C35D5F82164882C00EC277C /* SelectCategoryViewController.swift */,
 				0C35D61A2164A0BE00EC277C /* SelectOneQOneAViewController.swift */,
+				0C35D61C2164A82600EC277C /* OneQOneAViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				0C35D61B2164A0BE00EC277C /* SelectOneQOneAViewController.swift in Sources */,
 				0C35D5F22164351800EC277C /* AddViewController.swift in Sources */,
 				0C35D5F92164882C00EC277C /* SelectCategoryViewController.swift in Sources */,
+				0C35D61D2164A82600EC277C /* OneQOneAViewController.swift in Sources */,
 				0C35D5F02163C61300EC277C /* Phrase.swift in Sources */,
 				0C35D5ED216391A500EC277C /* Category.swift in Sources */,
 				0C35D5F421643FFA00EC277C /* PhraseListViewController.swift in Sources */,

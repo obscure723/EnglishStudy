@@ -316,7 +316,7 @@
         <!--Item-->
         <scene sceneID="9eE-pd-rkr">
             <objects>
-                <viewController id="CXF-xO-zMV" sceneMemberID="viewController">
+                <viewController id="CXF-xO-zMV" customClass="SelectOneQOneAViewController" customModule="EnglishStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4E4-w2-Aq7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,13 +372,78 @@
                         <viewLayoutGuide key="safeArea" id="65V-u4-kCE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="MYx-48-mzv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="q3C-ox-HLv" id="7iw-3F-zYT"/>
+                        <segue destination="C0I-ww-6EX" kind="show" identifier="OneQOneA" id="RYX-o6-yQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciK-dR-nme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1078" y="133"/>
         </scene>
+        <!--OneQ OneA View Controller-->
+        <scene sceneID="2Gx-gH-Dro">
+            <objects>
+                <viewController id="C0I-ww-6EX" customClass="OneQOneAViewController" customModule="EnglishStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDW-qL-ehb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-j1-xXg" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="16" y="133" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Js7-YF-hdd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一問一答" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-Ml-sKG">
+                                        <rect key="frame" x="152" y="25" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-kM-wWx">
+                                <rect key="frame" x="-117" y="432" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="bad"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-k4-dbG">
+                                <rect key="frame" x="45" y="496" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="bad"/>
+                                <connections>
+                                    <action selector="tapBad:" destination="C0I-ww-6EX" eventType="touchUpInside" id="ssS-pe-zFs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBj-8n-2h7">
+                                <rect key="frame" x="247" y="496" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="good"/>
+                                <connections>
+                                    <action selector="tapGood:" destination="C0I-ww-6EX" eventType="touchUpInside" id="XSS-Ll-0ef"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CVG-Hz-f8V"/>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="bbi-j1-xXg" id="Kq8-nm-Zju"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZY-zm-GlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="132.68365817091455"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bad" width="258" height="256"/>
+        <image name="good" width="255" height="267"/>
     </resources>
 </document>
